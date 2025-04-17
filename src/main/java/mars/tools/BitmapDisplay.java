@@ -157,7 +157,7 @@ public class BitmapDisplay extends AbstractMarsTool {
         canvas.setUnitHeight(UNIT_SIZE_CHOICES[settings.bitmapDisplayUnitHeight.get()]);
         canvas.setDisplayWidth(DISPLAY_SIZE_CHOICES[settings.bitmapDisplayWidth.get()]);
         canvas.setDisplayHeight(DISPLAY_SIZE_CHOICES[settings.bitmapDisplayHeight.get()]);
-        canvas.setFirstAddress(settings.bitmapDisplayBaseAddress.get());
+        canvas.setFirstAddress(baseAddresses[settings.bitmapDisplayBaseAddress.get()]);
 
         Box mainArea = Box.createVerticalBox();
         mainArea.add(new JScrollPane(this.canvas, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED));
